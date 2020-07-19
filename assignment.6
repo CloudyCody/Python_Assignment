@@ -1,0 +1,9 @@
+prime = []
+num = int(input("Enter a limit number :"))
+for prime_num in range(2, num+1):
+    condition = True
+    for i in range(2, prime_num):
+        if prime_num % i == 0: condition = False
+    if condition:
+        prime.append(prime_num)
+print(prime)
